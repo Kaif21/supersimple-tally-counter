@@ -1,5 +1,41 @@
+<!-- <!doctype html> -->
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+<div class="flex items-center justify-center text-9xl" id="countStr">0</div>
+<!-- +,- -->
+<div class="flex flex-row items-center justify-center gap-10">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="addBtn" onclick="addition()">
+        +
+    </button>
+    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full" id="subBtn" onclick="subtrack()">
+        -
+    </button>
+    
+</div>
+<!-- save,reset -->
+<div class="flex flex-row items-center justify-center gap-10 my-10">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded-lg" onclick="savebtn()">
+        Save
+    </button>
+    <button class="bg-red-500 hover:bg-red-700 text-white font-bold p-2 rounded-lg" onclick="resetbtn()">
+        Reset
+    </button>
+    
+</div>
+<div class="text-center " id="record">
+    Previous Entry: 
+</div>
+<script src="./script.js"></script>
+</body>
+</html> 
+
+<!-- <html>
+    <head>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
@@ -8,9 +44,6 @@
         <button id="increment-btn" onclick="increment()">INCREMENT</button>
         <button id="save-btn" onclick="save()">SAVE</button>
         <p id="save-el">Previous entries: </p>
-        <script src="index.js">
-            
-            
-        </script>
+        <script src="script.js"></script>
     </body>
-</html>
+</html> -->
