@@ -3,8 +3,8 @@
   "short_name": "Tally Counter",
   "theme_color": "#fff",
   "background_color": "#020617",
-  "display": "fullScreen",
-  "orientation": "",
+  "display": "standalone",
+  "orientation": "portrait",
   "scope": "/",
   "start_url": "/",
   "icons": [
@@ -48,5 +48,6 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "description": "Empower your business, events, or personal projects with the Quick Tally Counter PWA – the simplest and most efficient way to keep track of counts on the go! Whether you're managing attendance, tracking inventory, or counting laps during your workout, this user-friendly Progressive Web App (PWA) is designed to streamline your counting needs with ease."
 }
