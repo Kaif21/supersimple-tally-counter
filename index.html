@@ -4,46 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="output.css">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
-<body>
-<div class="flex items-center justify-center text-9xl" id="countStr">0</div>
+<body class="bg-slate-950">
+    <div class="flex flex-col min-h-screen justify-center items-center">
+<div class="flex text-9xl text-white my-10" id="countStr">0</div>
 <!-- +,- -->
-<div class="flex flex-row items-center justify-center gap-10">
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="addBtn" onclick="addition()">
+<div class="flex flex-row gap-10">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-2xl" id="addBtn" onclick="addition()">
         +
     </button>
-    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full" id="subBtn" onclick="subtrack()">
+    <button class="bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded-full text-2xl" id="subBtn" onclick="subtrack()">
         -
     </button>
     
 </div>
 <!-- save,reset -->
-<div class="flex flex-row items-center justify-center gap-10 my-10">
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded-lg" onclick="savebtn()">
+<div class="flex flex-row gap-10 my-10">
+    <button class="bg-green-600 hover:bg-green-800 text-white font-bold px-5 rounded-full text-lg" onclick="savebtn()">
         Save
     </button>
-    <button class="bg-red-500 hover:bg-red-700 text-white font-bold p-2 rounded-lg" onclick="resetbtn()">
+    <button class="bg-red-600 hover:bg-red-800 text-white font-bold px-5 rounded-full text-lg" onclick="resetbtn()">
         Reset
     </button>
     
 </div>
-<div class="text-center " id="record">
+<div class="text-center text-white font-semibold text-base" id="record">
     Previous Entry: 
+</div>
 </div>
 <script src="./script.js"></script>
 </body>
 </html> 
-
-<!-- <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <h1>People entered:</h1>
-        <h2 id="count-el">0</h2>
-        <button id="increment-btn" onclick="increment()">INCREMENT</button>
-        <button id="save-btn" onclick="save()">SAVE</button>
-        <p id="save-el">Previous entries: </p>
-        <script src="script.js"></script>
-    </body>
-</html> -->
