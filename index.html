@@ -22,40 +22,56 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Monoton&display=swap"
       rel="stylesheet"
     />
+    <title>SuperSimple Tally Counter</title>
   </head>
-  <body class="bg-slate-900 h-full w-full">
-    <div class="flex flex-col h-screen justify-center items-center">
-      <div
-        class="flex text-9xl text-white my-10 bg-slate-800 px-20 rounded-full py-6"
-        id="countStr"
-      >
-        0
-      </div>
-      <!-- +,- -->
-      <div class="flex flex-row">
-        <button
-          class="bg-red-900/50 hover:bg-red-500 text-white font-bold py-8 px-20 rounded-r-none rounded-full text-5xl"
-          id="subBtn"
-          onclick="subtrack()"
+  <body class="bg-slate-900 p-4">
+    <div class="max-w-3xl mx-auto">
+      <div class="flex flex-col min-h-screen justify-center items-center mt-24">
+        <div
+          class="flex text-9xl text-white my-10 bg-slate-800 px-20 rounded-full py-6"
+          id="countStr"
         >
-          -
+          0
+        </div>
+        <!-- +,- -->
+        <div class="flex flex-row">
+          <button
+            class="bg-red-900/50 hover:bg-red-500 text-white font-bold py-8 px-20 rounded-r-none rounded-full text-5xl"
+            id="subBtn"
+            onclick="subtrack()"
+          >
+            -
+          </button>
+          <button
+            class="bg-slate-600 hover:bg-blue-700 text-white font-bold py-8 px-20 rounded-l-none rounded-full text-5xl"
+            id="addBtn"
+            onclick="addition()"
+          >
+            +
+          </button>
+        </div>
+        <!-- counter list -->
+        <ul
+          id="counterList"
+          class="mt-8 w-full text-sm rounded-lg bg-gray-800 border-gray-700 border text-white overflow-hidden"
+        ></ul>
+      </div>
+
+      <div id="top-btn" class="absolute top-3 right-3 flex gap-4">
+        <button
+          class="w-auto border-2 border-red-600 hover:bg-red-500 text-white px-6 py-1 rounded-full text-lg"
+          onclick="resetbtn()"
+        >
+          Reset
         </button>
         <button
-          class="bg-slate-600 hover:bg-blue-700 text-white font-bold py-8 px-20 rounded-l-none rounded-full text-5xl"
-          id="addBtn"
-          onclick="addition()"
+          class="w-auto bg-green-600 hover:bg-green-400 text-white py-1 px-6 rounded-full text-lg"
+          onclick="addCounter()"
         >
-          +
+          Add Counter
         </button>
       </div>
-      <!-- save,reset -->
     </div>
-    <button
-      class="w-auto border-2 border-red-600 hover:bg-red-500 text-white px-6 py-3 rounded-full text-lg absolute top-3 right-3"
-      onclick="resetbtn()"
-    >
-      Reset
-    </button>
     <script src="./script.js"></script>
     <script>
       if ("serviceWorker" in navigator) {
