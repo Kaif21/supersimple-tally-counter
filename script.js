@@ -4,6 +4,16 @@ let countStr = document.getElementById("countStr")
 let counterList = document.getElementById("counterList")
 
 function addition() {
+
+    // create counter if nothing is there
+    const savedCounters = localStorage.getItem("counters")
+    if (savedCounters === "[]" || !savedCounters) {
+        console.log(savedCounters)
+        addCounter()
+        loadCounters()
+    }
+
+
     counters[currentCounterIndex].count += 1
     countStr.textContent = counters[currentCounterIndex].count
 
@@ -117,6 +127,8 @@ function updateCurrentCounter() {
 
     // Save counters to local storage
     saveCounters()
+
+
 }
 
 function saveCounters() {
