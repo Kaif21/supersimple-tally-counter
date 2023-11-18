@@ -9,12 +9,12 @@
   "start_url": "/",
   "screenshots": [
     {
-      "src": "screenshot-1.jpg",
+      "src": "screenshot-1.png",
       "type": "image/jpeg",
       "sizes": "1920x1080"
     },
     {
-      "src": "screenshot-2.jpg",
+      "src": "screenshot-2.png",
       "type": "image/jpeg",
       "sizes": "1920x1080"
     }
