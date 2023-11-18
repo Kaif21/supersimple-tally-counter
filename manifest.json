@@ -9,24 +9,29 @@
   "start_url": "/",
   "screenshots": [
     {
-      "src": "screenshot1.jpg",
+      "src": "screenshot-1.jpg",
+      "type": "image/jpeg",
+      "sizes": "1920x1080"
+    },
+    {
+      "src": "screenshot-2.jpg",
       "type": "image/jpeg",
       "sizes": "1920x1080"
     }
   ],
   "icons": [
     {
-      "src": "images/icons/icon-72x72.png",
+      "src": "logo.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "images/icons/icon-96x96.png",
+      "src": "logo.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "images/icons/icon-128x128.png",
+      "src": "logo28.png",
       "sizes": "128x128",
       "type": "image/png"
     },
