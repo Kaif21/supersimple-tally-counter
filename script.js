@@ -125,6 +125,11 @@ function saveCounters() {
 
 function loadCounters() {
     const savedCounters = localStorage.getItem("counters")
+    if (savedCounters === "[]" || !savedCounters) {
+        console.log(savedCounters)
+        addCounter()
+        loadCounters()
+    }
     if (savedCounters) {
         counters = JSON.parse(savedCounters)
         updateCounterList()
@@ -132,9 +137,12 @@ function loadCounters() {
         // Find current counter from URL parameter
         const urlParams = new URLSearchParams(window.location.search)
         const counterId = urlParams.get('id')
-        const counterIndex = parseInt(counterId.split('-')[1]) - 1
-        if (!isNaN(counterIndex) && counterIndex >= 0 && counterIndex < counters.length) {
-            currentCounterIndex = counterIndex
+        if (counterId) {
+
+            const counterIndex = parseInt(counterId.split('-')[1]) - 1
+            if (!isNaN(counterIndex) && counterIndex >= 0 && counterIndex < counters.length) {
+                currentCounterIndex = counterIndex
+            }
         }
     }
 
