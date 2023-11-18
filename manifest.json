@@ -1,5 +1,5 @@
 {
-  "name": "Simple Tally Counter",
+  "name": "SuperSimple Tally Counter",
   "short_name": "Tally Counter",
   "theme_color": "#0f172a",
   "background_color": "#0f172a",
@@ -47,7 +47,20 @@
       "src": "images/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "images/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable monochrome"
     }
   ],
-  "description": "Empower your business, events, or personal projects with the Quick Tally Counter PWA – the simplest and most efficient way to keep track of counts on the go! Whether you're managing attendance, tracking inventory, or counting laps during your workout, this user-friendly Progressive Web App (PWA) is designed to streamline your counting needs with ease."
+  "description": "SuperSimple Tally Counter is a powerful and easy-to-use counter app for iPhone, iPad, Apple Watch, and Mac. You can use it for everything you want to count. It's simple enough to pick up and use immediately, and powerful enough to tweak it just the way you want.",
+  "id": "stlraxis.supersimple.tally.counter",
+  "lang": "en",
+  "display_override": ["window-controls-overlay"],
+  "categories": ["utilities"],
+  "edge_side_panel": {
+    "preferred_width": 414
+  }
 }
