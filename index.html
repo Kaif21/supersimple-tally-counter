@@ -1,43 +1,109 @@
-<!-- <!doctype html> -->
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="output.css">
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-<!-- icon -->
-<link rel="icon" href="./images/icons/icon-192x192.png">
-<!-- manifest -->
-<link rel="manifest" href="./manifest.json">
-</head>
-<body class="bg-slate-950">
-    <div class="flex flex-col min-h-screen justify-center items-center">
-<div class="flex text-9xl text-white my-10" id="countStr">0</div>
-<!-- +,- -->
-<div class="flex flex-row gap-10">
-    <button class="bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded-full text-2xl" id="subBtn" onclick="subtrack()">
-        -
-    </button>
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-2xl" id="addBtn" onclick="addition()">
-        +
-    </button>
-</div>
-<!-- save,reset -->
-<div class="flex  gap-10 my-10">
-    <button class="bg-red-600 hover:bg-red-800 text-white font-bold px-5 rounded-full text-lg" onclick="resetbtn()">
-        Reset
-    </button>
-    
-</div>
-</div>
-<script src="./script.js"></script>
-<script>
-    if ('serviceWorker' in navigator){
-        navigator.serviceWorker.register('/service-worker.js')
-    }
-</script>
-</body>
-</html> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperSimple Tally Counter - Keep Count of Everything</title>
+    <meta
+      name="description"
+      content="SuperSimple Tally Counter is a powerful and easy-to-use counter app for iPhone, iPad, Apple Watch, and Mac. You can use it for everything you want to count. It's simple enough to pick up and use immediately, and powerful enough to tweak it just the way you want."
+    />
+    <meta name="theme-color" content="#0f172a" />
+
+    <link rel="stylesheet" href="output.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <link rel="icon" href="./logo.png" />
+    <!-- manifest -->
+    <link rel="manifest" href="./manifest.json" />
+  </head>
+  <body class="bg-slate-900 p-4">
+    <div class="max-w-3xl mx-auto">
+      <div class="flex flex-col min-h-screen justify-center items-center mt-24">
+        <div
+          class="flex text-9xl text-white my-10 bg-slate-800 px-20 rounded-full py-6"
+          id="countStr"
+        >
+          0
+        </div>
+        <!-- +,- -->
+        <div class="flex flex-row">
+          <button
+            class="bg-red-900/50 hover:bg-red-500 text-white font-bold py-8 px-20 rounded-r-none rounded-full text-5xl"
+            id="subBtn"
+            onclick="subtrack()"
+          >
+            -
+          </button>
+          <button
+            class="bg-slate-600 hover:bg-blue-700 text-white font-bold py-8 px-20 rounded-l-none rounded-full text-5xl"
+            id="addBtn"
+            onclick="addition()"
+          >
+            +
+          </button>
+        </div>
+        <!-- counter list -->
+        <ul
+          id="counterList"
+          class="mt-8 w-full text-sm rounded-lg bg-gray-800 border-gray-700 border text-white overflow-hidden"
+        >
+          Add atleast one counter first
+        </ul>
+
+        <div class="bg-slate-950 my-4 w-full">
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7756919313319706"
+            crossorigin="anonymous"
+          ></script>
+          <!-- Supersimple-tally-counter -->
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-7756919313319706"
+            data-ad-slot="7574959455"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          ></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+
+      <div id="top-btn" class="absolute top-3 right-3 flex gap-4">
+        <button
+          class="w-auto border-2 border-red-600 hover:bg-red-500 text-white px-6 py-1 rounded-full text-lg"
+          onclick="resetbtn()"
+        >
+          Reset
+        </button>
+        <button
+          class="w-auto bg-green-700 hover:bg-green-400 text-white py-1 px-6 rounded-full text-lg"
+          onclick="addCounter()"
+        >
+          Add Counter
+        </button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/service-worker.js");
+      }
+    </script>
+  </body>
+</html>

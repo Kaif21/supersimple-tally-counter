@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
-    font-family: 'Roboto Mono', monospace;
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+#countStr {
+    font-family: 'Abril Fatface', serif;
+
 }
