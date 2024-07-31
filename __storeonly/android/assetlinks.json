@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "supersimple.tallycounter",
+        "sha256_cert_fingerprints": ["50:29:49:9A:5B:53:8C:A3:30:BE:8E:A2:16:0B:70:25:E9:54:51:28:B7:69:91:C6:F0:8E:74:DC:2D:33:12:95"]
+      }
+    }]
