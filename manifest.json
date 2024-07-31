@@ -1,12 +1,12 @@
 {
   "name": "SuperSimple Tally Counter",
-  "short_name": "Tally Counter",
+  "short_name": "SuperSimple Tally Counter",
   "theme_color": "#0f172a",
   "background_color": "#0f172a",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
-  "start_url": "/",
+  "start_url": "/?launchpad=pwa",
   "screenshots": [
     {
       "src": "screenshot-1.png",
